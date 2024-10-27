@@ -93,6 +93,7 @@ const NotionPage = ({ post, className }) => {
         mapPageUrl={mapPageUrl}
         mapImageUrl={mapImgUrl}
         components={{
+          Link,
           Code,
           Collection,
           Equation,
@@ -144,7 +145,7 @@ const processGalleryImg = zoom => {
 }
 
 /**
- * 根据url参数自动滚动到锚位置
+ * 根据url参数自动滚动到锚��置
  */
 const autoScrollToHash = () => {
   setTimeout(() => {
@@ -190,6 +191,19 @@ function getMediumZoomMargin() {
     return 72
   }
 }
+
+// 自定义链接显示和打开方式
+const Link = (m) => <a 
+  href={m.href} 
+  target='_blank' 
+  style={{ 
+    color: '#1576ff', 
+    textDecoration: 'underline' 
+  }}
+>
+  {m.children.props.children}
+</a>
+
 
 // 代码
 const Code = dynamic(
