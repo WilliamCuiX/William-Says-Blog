@@ -194,14 +194,14 @@ function getMediumZoomMargin() {
 
 // 自定义链接显示和打开方式
 const Link = (m) => <a 
-  href={m.href} 
+  href={m?.href} 
   target='_blank' 
   style={{ 
     color: '#1576ff', 
     textDecoration: 'underline' 
   }}
 >
-  {m.children.props.children}
+  {m?.children?.props?.children}
 </a>
 
 
