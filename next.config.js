@@ -1,7 +1,7 @@
-const { THEME } = require('./blog.config')
+const { THEME } = require('./blog.config.back')
 const fs = require('fs')
 const path = require('path')
-const BLOG = require('./blog.config')
+const BLOG = require('./blog.config.back')
 const { extractLangPrefix } = require('./lib/utils/pageId')
 
 // 打包时是否分析代码

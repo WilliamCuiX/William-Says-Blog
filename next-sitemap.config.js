@@ -1,4 +1,4 @@
-const BLOG = require('./blog.config')
+const BLOG = require('./blog.config.back')
 
 /**
  * 通常没啥用，sitemap交给 /pages/sitemap.xml.js 动态生成
